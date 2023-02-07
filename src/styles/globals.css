@@ -2,9 +2,9 @@
 
 body {
   font-family: 'Segoe UI';
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   line-height: 1.75rem;
-  background-color: rgb(249 250 251);
+  background-color: whitesmoke;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -13,7 +13,7 @@ body {
 }
 
 h1 {
-  color: rgb(239 68 68);
+  color: #ef4444;
   font-style: italic;
   font-size: 3.75rem;
   font-weight: inherit;
@@ -26,7 +26,7 @@ main {
   width: 100vh;
   margin: 1.25rem;
   box-sizing: border-box;
-  border: 1px solid #e5e7eb;
+  border: 1px solid lightgray;
   border-radius: 0.5rem;
   box-shadow: 0 2px 4px #0003, 0 25px 50px #0000001a;
 }
@@ -35,7 +35,7 @@ main>div,
 main>form {
   justify-content: space-between;
   padding: 0.5rem 1rem;
-  border-bottom: 1px solid #e5e7eb;
+  border-bottom: 1px solid lightgray;
   display: flex;
   align-items: center;
   gap: 0.25rem;
@@ -60,6 +60,6 @@ button {
   font-family: inherit;
   font-size: 85%;
   line-height: inherit;
-  border: 2px solid rgba(0, 0, 0, .1);
+  border: 2px solid #0000001a;
   border-radius: 0.5rem;
 }
