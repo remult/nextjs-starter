@@ -1,14 +1,9 @@
 @charset "utf-8";
 
 body {
-  font-family: 'Segoe UI';
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+  font-family: Arial;
   background-color: whitesmoke;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
-  display: flex;
   margin: 0;
 }
 
@@ -21,10 +16,10 @@ h1 {
 }
 
 main {
+  max-width: 500px;
+  min-width: 300px;
+  margin: auto;
   background-color: white;
-  max-width: 28rem;
-  width: 100vh;
-  margin: 1.25rem;
   box-sizing: border-box;
   border: 1px solid lightgray;
   border-radius: 0.5rem;
@@ -33,12 +28,16 @@ main {
 
 main>div,
 main>form {
-  justify-content: space-between;
   padding: 0.5rem 1rem;
   border-bottom: 1px solid lightgray;
   display: flex;
   align-items: center;
   gap: 0.25rem;
+  justify-content: space-between;
+}
+
+main>div:has(input[type='checkbox']) {
+  justify-content: inherit;
 }
 
 input {
@@ -48,14 +47,23 @@ input {
   border: 0;
 }
 
+input:checked+input {
+  text-decoration: line-through;
+}
+
+input:placeholder-shown {
+  font-style: italic;
+}
+
 input[type='checkbox'] {
-  width: 2rem;
+  width: 36px;
+  height: 36px;
   height: 1.5rem;
 }
 
 button {
   cursor: pointer;
-  padding: 0 0.75rem;
+  padding: 0.5rem 0.5rem;
   background-color: white;
   font-family: inherit;
   font-size: 85%;
