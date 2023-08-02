@@ -1,0 +1,207 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
+@import url(normalize.css);
+* {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  text-align: right;
+  letter-spacing: 1px;
+  direction: rtl;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 100;
+}
+
+.pull-center {
+  margin-right: auto;
+  margin-left: auto;
+  float: none;
+}
+
+textarea {
+  resize: unset;
+}
+
+.uicontainer {
+  margin-top: 49px;
+  padding-bottom: 1em;
+}
+
+/*----------------------------------------------------------------------------*/
+
+a.navbar-right,
+div ul li a {
+  font-size: larger;
+}
+
+/*----------------------------------------------------------------------------*/
+
+.panel-heading,
+.panel,
+.panel-body {
+  padding: 0;
+  margin: 0;
+}
+
+#panelForm {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+}
+
+/*----------------------------------------------------------------------------*/
+#testTable {
+  width: 100%;
+}
+th,
+td {
+  text-align: center;
+  width: auto;
+}
+
+.nameCell {
+  width: 25%;
+  text-align: right;
+}
+.numberCell {
+  width: 5%;
+  text-align: right;
+}
+
+tbody > tr:first-child > td {
+  border-top: solid silver;
+}
+
+.borderTop {
+  border-top: 2px solid;
+}
+.borderCat {
+  border: 2px solid lightgray;
+}
+.cat {
+  font-weight: bold;
+}
+/*----------------------------------------------------------------------------*/
+
+#list1 > .list-group-item {
+  width: 100%;
+  margin: 0;
+  padding: 0 1% 0 2%;
+  height: 2em;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: 0.09em;
+  border: none;
+}
+
+/*.list-group-item { border-radius: 0; width: 100%; }*/
+.list-group-item a {
+  padding: 0 2% 0 2%;
+  border-left: 1px solid black;
+}
+.list-group-item a:last-child {
+  border: none;
+}
+.list-group-item a:nth-last-child(2) {
+  border-left: 2px solid black;
+}
+/*---------------------------------------------------------------------------------------------------------------------------*/
+
+@media only screen and (max-width: 768px) {
+  .uicontainer {
+    margin-top: 57px;
+    padding-bottom: 1em;
+  }
+
+  /*---------------------------------------------------------------------------------------------------------------------------*/
+
+  #title {
+    font-size: 1.6em;
+  }
+  .title {
+    text-shadow: 1px 1px 0.5px black;
+    font-size: x-large;
+    font-weight: bold;
+    margin: 0;
+    padding: 0.075em 0 0.2em;
+  }
+
+  .pageTitle {
+    text-shadow: 1px 1px 0.5px black;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 125px;
+    padding: 0;
+    margin: 0;
+    margin-top: 2%;
+    margin-bottom: 1%;
+  }
+
+  #testTable,
+  #testTable > tbody,
+  #testTable > tbody > tr {
+    width: 100%;
+  }
+
+  .panel-heading > h3 {
+    font-size: 1.6em;
+  }
+
+  .list-group-item a {
+    padding: 0 2% 0 2%;
+  }
+}
+
+.loader {
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+
+  border: 10px solid #f3f3f3;
+  border-top: 10px solid #1aac83;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
